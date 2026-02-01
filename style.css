@@ -1,6 +1,11 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Page base */
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   background: url("background.jpg") no-repeat center center fixed;
   background-size: cover;
   color: white;
@@ -20,12 +25,13 @@ header {
 
 /* Sections */
 section {
-  background: rgba(40, 40, 40, 0.9);
-  margin: 30px auto;
+  background: rgba(45, 45, 45, 0.95);
+  margin: 35px auto;
   padding: 30px;
-  border-radius: 14px;
-  width: 75%;
-  box-shadow: 0 0 20px rgba(0,0,0,0.6);
+  width: 80%;
+  max-width: 900px;
+  border-radius: 16px;
+  box-shadow: 0 0 25px rgba(0,0,0,0.6);
 }
 
 h1, h2 {
@@ -38,7 +44,8 @@ a {
   color: #00ffd5;
   text-decoration: none;
   font-weight: bold;
-  margin: 0 15px;
+  margin: 0 18px;
+  font-size: 18px;
 }
 
 a:hover {
@@ -47,9 +54,16 @@ a:hover {
 
 /* Video */
 iframe {
-  width: 90%;
+  width: 100%;
   max-width: 720px;
-  height: 400px;
-  border-radius: 12px;
+  height: 405px;
+  border-radius: 14px;
   border: none;
+}
+
+/* Footer */
+footer {
+  margin: 30px 0;
+  font-size: 14px;
+  opacity: 0.8;
 }
