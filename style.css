@@ -228,4 +228,31 @@ footer {
   line-height: 1.7;
   opacity: 0.85;
 }
+/* PAGE HERO */
+.page-hero {
+  height: 260px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.9));
+}
+
+.page-hero h1 {
+  font-size: 40px;
+  letter-spacing: 3px;
+}
+
+/* PAGE CONTENT */
+.page-content {
+  padding: 100px 20px;
+  background: #0b0b0b;
+}
+
+.content-box {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 50px;
+  background: #151515;
+  border: 1px solid #1f1f1f;
+}
 
