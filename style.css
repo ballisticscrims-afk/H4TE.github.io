@@ -327,12 +327,11 @@ footer {
 .clean-link:hover {
   color: #ff2a2a;
   border-color: #ff2a2a;
-}
-.team-logo {
-  width: 220px;
-  max-width: 80%;
-  height: auto;
-  margin-bottom: 30px;
-  opacity: 0.95;
-}
 
+.team-logo-force {
+  width: 160px !important;
+  max-width: 160px !important;
+  height: auto !important;
+  display: block;
+  margin: 0 auto 30px auto;
+}
