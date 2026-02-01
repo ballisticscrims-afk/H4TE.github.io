@@ -173,4 +173,31 @@ footer {
   max-width: 640px;
   padding-left: 80px;
 }
+/* =====================
+   ABOUT SECTION
+===================== */
+
+.about-section {
+  background: #0b0b0b;
+  padding: 100px 0;
+  border-top: 1px solid #1f1f1f;
+}
+
+.about-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.about-inner h2 {
+  font-size: 36px;
+  letter-spacing: 3px;
+  margin-bottom: 25px;
+}
+
+.about-inner p {
+  font-size: 18px;
+  line-height: 1.7;
+  opacity: 0.85;
+}
 
