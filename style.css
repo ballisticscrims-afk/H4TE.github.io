@@ -54,6 +54,11 @@ body {
   padding-left: 8%;
 }
 
+  .hero-overlay {
+  position: absolute;
+  inset: 0;
+}
+
 
 
 
