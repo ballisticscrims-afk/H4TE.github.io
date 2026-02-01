@@ -25,9 +25,9 @@ style.css
 
 <section class="socials">
   <h2>Socials</h2>
-  <a href="https://discord.gg/YOURLINK" target="_blank">Discord</a>
-  <a href="https://twitter.com/YOURNAME" target="_blank">Twitter/X</a>
-  <a href="https://youtube.com/@YOURCHANNEL" target="_blank">YouTube</a>
+  <a href="https://discord.gg/hateeu" target="_blank">Discord</a>
+  <a href="https://youtube.com/@H4TEEU" target="_blank">YouTube</a>
+  <a href="https://www.tiktok.com/@h4teballistic" target="_blank">TikTok</a>
 </section>
 
 <section class="videos">
