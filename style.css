@@ -6,9 +6,19 @@
 }
 
 body {
-  background: black;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
   color: white;
+
+  /* BACKGROUND IMAGE */
+  background: 
+    linear-gradient(
+      rgba(0,0,0,0.85),
+      rgba(0,0,0,0.85)
+    ),
+    url("site-bg.jpg") center / cover no-repeat fixed;
 }
+
 
 /* NAV */
 .nav {
