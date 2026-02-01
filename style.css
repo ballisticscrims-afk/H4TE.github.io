@@ -63,14 +63,21 @@ body {
 ===================== */
 
 .hero {
-  background:
-    linear-gradient(to right, rgba(0,0,0,0.85), rgba(0,0,0,0.3)),
-    url("hero.jpg") center / cover no-repeat;
-
   height: 420px;
   display: flex;
   align-items: center;
+  justify-content: flex-start;
+
+  background:
+    linear-gradient(
+      to right,
+      rgba(0,0,0,0.85),
+      rgba(0,0,0,0.6),
+      rgba(0,0,0,0.3)
+    ),
+    url("hero-bg.jpg") center / cover no-repeat;
 }
+
 
 .hero-inner {
   width: 100%;
