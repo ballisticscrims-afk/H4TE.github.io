@@ -35,15 +35,10 @@ style.css
   <iframe src="https://www.youtube.com/watch?v=oR283snO-sg" allowfullscreen></iframe>
 </section>
 
-<section class="roster">
-  <h2>Player Roster</h2>
-  <div class="player">Player1 – IGL</div>
-  <div class="player">Player2 – Fragger</div>
-  <div class="player">Player3 – Support</div>
-</section>
+
 
 <footer>
-  <p>© 2026 Your Clan Name</p>
+  <p>© 2026 H4TE</p>
 </footer>
 
 </body>
