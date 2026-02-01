@@ -35,8 +35,10 @@ body {
 }
 
 .nav img {
-  height: 36px;
+  height: 52px;      /* makes logo fit the bar */
+  width: auto;       /* keeps proportions */
 }
+
 
 .nav-center a {
   color: white;
