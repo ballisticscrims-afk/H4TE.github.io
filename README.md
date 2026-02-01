@@ -3,46 +3,52 @@ index.html
 style.css
 logo.png
 background.jpg
-
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>H4TE</title>
+  <title>H4TE Gaming</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
 <header>
-  <img src="logo.png" class="logo" alt="Clan Logo">
+  <img src="logo.png" alt="H4TE Logo" class="logo">
   <h1>H4TEEU</h1>
 </header>
 
-<section class="about">
+<section>
   <h2>About Us</h2>
   <p>
- H4TE GAMING is a competitive esports organization built on skill, discipline, and the relentless drive to win. We bring together elite players, creators, and competitors who thrive under pressure and dominate on the biggest stages. From ranked ladders to tournaments, H4TE GAMING represents passion, precision, and pure competition.
+    H4TE GAMING is a competitive esports organization built on skill,
+    discipline, and the relentless drive to win. We bring together elite
+    players, creators, and competitors who thrive under pressure and
+    dominate on the biggest stages. From ranked ladders to tournaments,
+    H4TE GAMING represents passion, precision, and pure competition.
   </p>
 </section>
 
-<section class="socials">
+<section>
   <h2>Socials</h2>
-  <a href="https://discord.gg/hateeu" target="_blank">Discord</a>
-  <a href="https://youtube.com/@H4TEEU" target="_blank">YouTube</a>
-  <a href="https://www.tiktok.com/@h4teballistic" target="_blank">TikTok</a>
+  <a href="https://discord.gg/YOURDISCORD" target="_blank">Discord</a>
+  <a href="https://youtube.com/@YOURCHANNEL" target="_blank">YouTube</a>
+  <a href="https://tiktok.com/@YOURTIKTOK" target="_blank">TikTok</a>
 </section>
 
-<section class="videos">
+<section>
   <h2>Videos</h2>
-  <iframe src="https://www.youtube.com/watch?v=oR283snO-sg" allowfullscreen></iframe>
+  <iframe
+    src="https://www.youtube.com/embed/VIDEOID"
+    title="H4TE Video"
+    allowfullscreen>
+  </iframe>
 </section>
-
-
 
 <footer>
-  <p>© 2026 H4TE</p>
+  © 2026 H4TE
 </footer>
 
+</body>
+</html>
