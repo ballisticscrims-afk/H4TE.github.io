@@ -56,7 +56,12 @@ body {
 
 .nav-right {
   font-size: 14px;
+
+.nav {
+  position: relative;
+  z-index: 1000;
 }
+
 
 /* =====================
    HERO BANNER
@@ -341,5 +346,9 @@ footer {
 .player-card span {
   color: #00ffd5;
   font-size: 13px;
+
+.hero,
+.hero * {
+  pointer-events: auto;
 }
 
