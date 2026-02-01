@@ -122,6 +122,26 @@ body {
   background: white;
   color: black;
 }
+.hero-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 14px 40px;
+  border: 2px solid #ffffff;
+  background: transparent;
+
+  color: #ffffff !important;
+  text-decoration: none !important;
+
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 3px;
+
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
 
 
 .cta {
