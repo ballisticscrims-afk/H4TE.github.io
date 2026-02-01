@@ -162,3 +162,29 @@ footer {
   font-size: 12px;
   opacity: 0.5;
 }
+/* ABOUT PAGE */
+
+.about-wrap {
+  padding: 80px;
+  display: flex;
+  justify-content: center;
+}
+
+.about-box.full {
+  max-width: 900px;
+  background: rgba(20,20,20,0.9);
+  padding: 50px;
+  border: 1px solid #1f1f1f;
+}
+
+.about-box.full p {
+  line-height: 1.8;
+  opacity: 0.9;
+  margin-bottom: 22px;
+}
+
+.about-highlight {
+  margin-top: 30px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
