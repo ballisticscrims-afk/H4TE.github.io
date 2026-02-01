@@ -56,33 +56,21 @@ body {
 
 .nav-right {
   font-size: 14px;
-
-.nav {
-  position: relative;
-  z-index: 1000;
 }
-
 
 /* =====================
    HERO BANNER
 ===================== */
 
 .hero {
+  background:
+    linear-gradient(to right, rgba(0,0,0,0.85), rgba(0,0,0,0.3)),
+    url("hero.jpg") center / cover no-repeat;
+
   height: 420px;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
-
-  background:
-    linear-gradient(
-      to right,
-      rgba(0,0,0,0.85),
-      rgba(0,0,0,0.6),
-      rgba(0,0,0,0.3)
-    ),
-    url("hero-bg.jpg") center / cover no-repeat;
 }
-
 
 .hero-inner {
   width: 100%;
@@ -152,203 +140,5 @@ footer {
   padding: 30px;
   font-size: 13px;
   opacity: 0.6;
-}
-/* === FORCE HERO BACKGROUND IMAGE === */
-.hero {
-  height: 420px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-
-  background-image:
-    linear-gradient(
-      to right,
-      rgba(0,0,0,0.85),
-      rgba(0,0,0,0.6),
-      rgba(0,0,0,0.3)
-    ),
-    url("hero-bg.jpg");
-
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.hero-content {
-  max-width: 640px;
-  padding-left: 80px;
-}
-/* =====================
-   ABOUT SECTION
-===================== */
-
-.about-section {
-  background: #0b0b0b;
-  padding: 100px 0;
-  border-top: 1px solid #1f1f1f;
-}
-
-.about-inner {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 0 40px;
-}
-
-.about-inner h2 {
-  font-size: 36px;
-  letter-spacing: 3px;
-  margin-bottom: 25px;
-}
-
-.about-inner p {
-  font-size: 18px;
-  line-height: 1.7;
-  opacity: 0.85;
-}
-/* =====================
-   ABOUT SECTION (BOXED)
-===================== */
-
-.about-section {
-  background: #0b0b0b;
-  padding: 120px 20px;
-}
-
-.about-box {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 60px 60px;
-  background: #151515;
-  border: 1px solid #1f1f1f;
-}
-
-.about-box h2 {
-  font-size: 34px;
-  letter-spacing: 3px;
-  margin-bottom: 25px;
-}
-
-.about-box p {
-  font-size: 18px;
-  line-height: 1.7;
-  opacity: 0.85;
-}
-/* PAGE HERO */
-.page-hero {
-  height: 260px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.9));
-}
-
-.page-hero h1 {
-  font-size: 40px;
-  letter-spacing: 3px;
-}
-
-/* PAGE CONTENT */
-.page-content {
-  padding: 100px 20px;
-  background: #0b0b0b;
-}
-
-.content-box {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 50px;
-  background: #151515;
-  border: 1px solid #1f1f1f;
-}
-/* =====================
-   TEAM / ROSTER GRID
-===================== */
-
-.roster-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 30px;
-  padding: 80px;
-  background: #0b0b0b;
-}
-
-/* PLAYER CARD */
-.player-card {
-  background: #151515;
-  padding: 25px;
-  text-align: center;
-  border: 1px solid #1f1f1f;
-  transition: transform 0.2s ease;
-}
-
-.player-card:hover {
-  transform: translateY(-6px);
-}
-
-.player-image {
-  height: 220px;
-  background: #222;
-  margin-bottom: 20px;
-}
-
-/* PLAYER TEXT */
-.player-card h3 {
-  letter-spacing: 2px;
-  margin-bottom: 6px;
-}
-
-.player-card span {
-  font-size: 13px;
-  color: #00ffd5;
-  letter-spacing: 1px;
-}
-/* PAGE HERO */
-.page-hero {
-  height: 260px;
-  background: #000;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.page-hero h1 {
-  font-size: 42px;
-  letter-spacing: 3px;
-  color: white;
-}
-
-/* ROSTER GRID */
-.roster-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 30px;
-  padding: 80px;
-  background: #0b0b0b;
-}
-
-.player-card {
-  background: #151515;
-  padding: 25px;
-  text-align: center;
-  border: 1px solid #1f1f1f;
-}
-
-.player-image {
-  height: 220px;
-  background: #222;
-  margin-bottom: 20px;
-}
-
-.player-card h3 {
-  letter-spacing: 2px;
-}
-
-.player-card span {
-  color: #00ffd5;
-  font-size: 13px;
-
-.hero,
-.hero * {
-  pointer-events: auto;
 }
 
