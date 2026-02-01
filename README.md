@@ -6,7 +6,7 @@ style.css
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Your Clan Name</title>
+  <title>H4TE</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
