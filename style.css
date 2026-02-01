@@ -19,8 +19,12 @@ header {
 }
 
 .logo {
-  width: 140px;
-  margin-bottom: 10px;
+  width: 320px;   /* increase or decrease if you want */
+  max-width: 90%;
+  margin: 20px auto;
+  display: block;
+}
+
 }
 
 /* Sections */
