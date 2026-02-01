@@ -43,10 +43,12 @@ body {
 /* HERO */
 /* HERO VIDEO BACKGROUND */
 .hero {
+  height: 70vh;          /* banner size */
+  min-height: 520px;     /* keeps it strong on big screens */
   position: relative;
-  height: 100vh;
   overflow: hidden;
 }
+
 
 /* Video */
 .hero-video {
