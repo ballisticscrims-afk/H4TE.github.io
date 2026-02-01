@@ -109,19 +109,6 @@ body {
   color: black;
 }
 
-/* VIDEO UNDER TITLE */
-.hero-video-box {
-  width: 100%;
-  margin: 25px 0;
-  overflow: hidden;
-  border-radius: 6px;
-}
-
-.hero-video-box video {
-  width: 100%;
-  height: 140px;      /* SAME SIZE EVERY TIME */
-  object-fit: cover;
-}
 
 /* =====================
    GRID SECTION
