@@ -148,3 +148,29 @@ footer {
   font-size: 13px;
   opacity: 0.6;
 }
+/* === FORCE HERO BACKGROUND IMAGE === */
+.hero {
+  height: 420px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  background-image:
+    linear-gradient(
+      to right,
+      rgba(0,0,0,0.85),
+      rgba(0,0,0,0.6),
+      rgba(0,0,0,0.3)
+    ),
+    url("hero-bg.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero-content {
+  max-width: 640px;
+  padding-left: 80px;
+}
+
