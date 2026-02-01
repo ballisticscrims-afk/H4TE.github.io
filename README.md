@@ -19,8 +19,7 @@ style.css
 <section class="about">
   <h2>About Us</h2>
   <p>
-    We are a competitive gaming team focused on teamwork,
-    skill, and dominating the leaderboard.
+ H4TE GAMING is a competitive esports organization built on skill, discipline, and the relentless drive to win. We bring together elite players, creators, and competitors who thrive under pressure and dominate on the biggest stages. From ranked ladders to tournaments, H4TE GAMING represents passion, precision, and pure competition.
   </p>
 </section>
 
