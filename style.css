@@ -38,25 +38,20 @@ body {
 
 .nav-links a:hover {
   color: red;
-}
 
-/* HERO */
-/* HERO VIDEO BACKGROUND */
-.hero {
-  height: 70vh;          /* banner size */
-  min-height: 520px;     /* keeps it strong on big screens */
-  position: relative;
-  overflow: hidden;
-}
-
-
-/* Video */
 .hero {
   position: relative;
-  height: 45vh;        /* MUCH smaller */
-  max-height: 420px;   /* hard cap */
-  min-height: 320px;   /* prevents collapse */
-  overflow: hidden;
+  height: 35vh;               /* banner size */
+  max-height: 360px;
+  min-height: 280px;
+
+  background:
+    linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.85)),
+    url("background.jpg") center / cover no-repeat;
+
+  display: flex;
+  align-items: center;
+  padding-left: 8%;
 }
 
 
