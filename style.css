@@ -1,410 +1,264 @@
+/* =========================
+   GLOBAL RESET
+========================= */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
 }
 
 body {
-  margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  color: white;
-
-  /* BACKGROUND IMAGE */
-  background: 
-    linear-gradient(
-      rgba(0,0,0,0.85),
-      rgba(0,0,0,0.85)
-    ),
-    url("site-bg.jpg") center / cover no-repeat fixed;
+  background: #000;
+  color: #fff;
+  overflow-x: hidden;
 }
 
+/* =========================
+   BACKGROUND (IMAGE / VIDEO)
+========================= */
+.background {
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  overflow: hidden;
+}
 
-/* NAV */
-.nav {
+.background img,
+.background video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.background::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.65);
+  z-index: 1;
+}
+
+/* =========================
+   TOP NAV BAR
+========================= */
+.top-bar {
   position: fixed;
   top: 0;
   width: 100%;
   height: 70px;
-  background: #1c1c1c;
+  background: rgba(0,0,0,0.9);
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  padding: 0 60px;
+  align-items: center;
+  padding: 0 50px;
   z-index: 1000;
 }
 
-.nav img {
-  height: 100px;      /* makes logo fit the bar */
-  width: auto;       /* keeps proportions */
+.nav-left a {
+  display: flex;
+  align-items: center;
 }
 
+.nav-logo {
+  height: 42px;
+}
 
-.nav-center a {
-  color: white;
+.nav-right a {
+  margin-left: 35px;
+  color: #ffffff;
   text-decoration: none;
-  margin: 0 18px;
-  letter-spacing: 2px;
   font-size: 14px;
+  letter-spacing: 2px;
+  transition: color 0.2s ease;
 }
 
-.nav-center a:hover {
+.nav-right a:hover,
+.nav-right a.active {
   color: #00ffd5;
 }
 
-/* HERO */
-/* HERO SECTION */
-.hero {
+/* =========================
+   PAGE SECTIONS (GLOBAL)
+========================= */
+.page-section {
+  padding: 140px 80px 100px;
   position: relative;
-  height: 85vh;
-  width: 100%;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-}
-
-/* VIDEO */
-.hero-video {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  transform: translate(-50%, -50%);
-  z-index: 1;
-  object-fit: cover;
-}
-
-/* DARK OVERLAY */
-.hero-overlay {
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.65);
   z-index: 2;
 }
 
-/* CONTENT */
-.hero-content {
-  position: relative;
-  z-index: 3;
-  padding-left: 80px;
-  max-width: 700px;
-  color: white;
+.page-title {
+  font-size: 44px;
+  letter-spacing: 4px;
+  margin-bottom: 60px;
+  text-align: center;
 }
 
-.hero-content h1 {
-  font-size: 64px;
-  font-weight: 800;
-  letter-spacing: 2px;
+/* =========================
+   HERO / LANDING
+========================= */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.hero-content {
+  max-width: 600px;
+}
+
+.hero h1 {
+  font-size: 52px;
+  letter-spacing: 4px;
   margin-bottom: 20px;
 }
 
-.hero-content p {
-  font-size: 18px;
+.hero p {
   opacity: 0.85;
-  margin-bottom: 30px;
+  margin-bottom: 35px;
 }
 
-.hero-btn {
+/* ENTER BUTTON */
+.enter-btn {
   display: inline-block;
-  padding: 14px 36px;
-  border: 2px solid white;
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  letter-spacing: 2px;
-  transition: all 0.3s ease;
-}
-
-.hero-btn:hover {
-  background: white;
-  color: black;
-}
-.hero-btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-
-  padding: 14px 40px;
+  padding: 14px 34px;
   border: 2px solid #ffffff;
-  background: transparent;
-
-  color: #ffffff !important;
-  text-decoration: none !important;
-
-  font-size: 14px;
-  font-weight: 700;
-  letter-spacing: 3px;
-
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-
-
-.cta {
-  display: inline-block;
-  padding: 12px 30px;
-  border: 2px solid white;
-  color: white;
-  text-decoration: none;
-}
-
-.cta:hover {
-  background: white;
-  color: black;
-}
-
-/* BOXES */
-.boxes {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
-  padding: 80px;
-}
-
-.box {
-  background: #151515;
-  height: 200px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-  color: white;
-  letter-spacing: 2px;
-}
-
-.box:hover {
-  background: #1f1f1f;
-}
-
-/* PAGE HERO */
-.page {
-  padding-top: 140px;
-  text-align: center;
-}
-
-.page h1 {
-  font-size: 40px;
-  letter-spacing: 3px;
-}
-
-/* TEAM GRID */
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 30px;
-  padding: 80px;
-}
-
-.card {
-  background: #151515;
-  padding: 20px;
-}
-
-.card div {
-  height: 200px;
-  background: #222;
-  margin-bottom: 15px;
-}
-
-footer {
-  text-align: center;
-  padding: 40px;
-  font-size: 12px;
-  opacity: 0.5;
-}
-/* ABOUT PAGE */
-
-.about-wrap {
-  padding: 80px;
-  display: flex;
-  justify-content: center;
-}
-
-.about-box.full {
-  max-width: 900px;
-  background: rgba(20,20,20,0.9);
-  padding: 50px;
-  border: 1px solid #1f1f1f;
-}
-
-.about-box.full p {
-  line-height: 1.8;
-  opacity: 0.9;
-  margin-bottom: 22px;
-}
-
-.about-highlight {
-  margin-top: 30px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-}
-/* =====================
-   MEDIA PAGE
-===================== */
-
-.media-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 40px;
-  padding: 80px;
-}
-
-.media-card {
-  background: rgba(20,20,20,0.9);
-  padding: 20px;
-  border: 1px solid #1f1f1f;
-}
-
-.media-card video {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  background: black;
-  margin-bottom: 15px;
-}
-
-.media-card h3 {
-  letter-spacing: 2px;
-  margin-bottom: 6px;
-}
-
-.media-card p {
-  opacity: 0.8;
-  font-size: 14px;
-}
-.clean-section {
-  background: #0a0a0a;
-  padding: 80px 60px;
-}
-
-.clean-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
-}
-
-.clean-box {
-  background: rgba(255,255,255,0.04);
-  padding: 40px;
-  border: 1px solid rgba(255,255,255,0.08);
-  transition: transform 0.3s ease, background 0.3s ease;
-}
-
-.clean-box:hover {
-  transform: translateY(-6px);
-  background: rgba(255,255,255,0.07);
-}
-
-.clean-box h2 {
-  font-size: 20px;
-  letter-spacing: 2px;
-  margin-bottom: 16px;
-}
-
-.clean-box p {
-  font-size: 14px;
-  line-height: 1.7;
-  opacity: 0.85;
-}
-
-.clean-link {
-  display: inline-block;
-  margin-top: 20px;
-  font-size: 12px;
-  letter-spacing: 2px;
   color: #ffffff;
   text-decoration: none;
-  border-bottom: 1px solid #ffffff;
-  padding-bottom: 4px;
+  letter-spacing: 3px;
+  font-size: 14px;
+  transition: all 0.25s ease;
 }
 
-.clean-link:hover {
-  color: #ff2a2a;
-  border-color: #ff2a2a;
-
-.team-logo-force {
-  width: 160px !important;
-  max-width: 160px !important;
-  height: auto !important;
-  display: block;
-  margin: 0 auto 30px auto;
-
-/* PAGE BACKGROUND */
-.page-bg {
-  position: fixed;
-  inset: 0;
-  background: url("background.jpg") center/cover no-repeat;
-  z-index: -2;
+.enter-btn:hover {
+  background: #ffffff;
+  color: #000000;
 }
 
-.page-bg::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0,0,0,0.75);
-}
-
-/* PAGE LAYOUT */
-.page-section {
-  padding: 160px 0 120px;
-}
-
-.page-container {
-  max-width: 1200px;
+/* =========================
+   ABOUT BOX
+========================= */
+.about-box {
+  max-width: 900px;
   margin: 0 auto;
-  padding: 0 40px;
-  text-align: center;
+  background: rgba(255,255,255,0.05);
+  padding: 50px;
+  line-height: 1.7;
 }
 
-.page-title {
-  font-size: 48px;
-  letter-spacing: 4px;
-  margin-bottom: 80px;
-}
-
-/* TEAM GRID */
+/* =========================
+   TEAM SECTION
+========================= */
 .team-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .player-card {
   background: rgba(255,255,255,0.06);
-  padding: 30px;
-  transition: all 0.3s ease;
+  padding: 25px;
+  text-align: left;
 }
 
-.player-card:hover {
-  transform: translateY(-6px);
-  background: rgba(255,255,255,0.12);
-}
-
-.player-image {
+.player-img {
   height: 220px;
   background: #1a1a1a;
   margin-bottom: 20px;
 }
 
 .player-card h3 {
-  margin: 10px 0 6px;
+  margin-bottom: 6px;
+  letter-spacing: 2px;
 }
 
 .player-card p {
   opacity: 0.7;
-}
-
-/* FOOTER */
-.footer {
-  text-align: center;
-  padding: 40px 0;
-  opacity: 0.6;
   font-size: 14px;
 }
 
+/* =========================
+   MEDIA SECTION
+========================= */
+.media-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.media-card {
+  background: rgba(255,255,255,0.06);
+  padding: 20px;
+}
+
+.media-card video,
+.media-card iframe {
+  width: 100%;
+  height: 220px;
+  background: #000;
+}
+
+.media-card h4 {
+  margin-top: 15px;
+  letter-spacing: 2px;
+  font-size: 14px;
+}
+
+/* =========================
+   SOCIALS
+========================= */
+.socials-grid {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.socials-grid a {
+  color: #ffffff;
+  text-decoration: none;
+  letter-spacing: 3px;
+  border-bottom: 2px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.socials-grid a:hover {
+  border-color: #00ffd5;
+  color: #00ffd5;
+}
+
+/* =========================
+   FOOTER
+========================= */
+.footer {
+  text-align: center;
+  padding: 40px 0;
+  opacity: 0.5;
+  font-size: 13px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 1000px) {
+  .team-grid,
+  .media-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .page-section {
+    padding: 120px 30px 80px;
+  }
+
+  .hero h1 {
+    font-size: 40px;
+  }
+}
