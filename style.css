@@ -335,14 +335,14 @@ footer {
   display: block;
   margin: 0 auto 30px auto;
 }
-/* ===== TEAM PAGE ===== */
+/* ===== TEAM SECTION ===== */
 
 .team-section {
   min-height: 100vh;
-  padding: 140px 60px 100px;
+  padding: 120px 60px;
   background: linear-gradient(
-    rgba(0,0,0,0.85),
-    rgba(0,0,0,0.85)
+    rgba(0,0,0,0.8),
+    rgba(0,0,0,0.8)
   ),
   url("background.jpg") center / cover no-repeat;
 }
@@ -355,7 +355,7 @@ footer {
 
 .team-title {
   font-size: 32px;
-  letter-spacing: 4px;
+  letter-spacing: 5px;
   margin-bottom: 80px;
 }
 
@@ -369,18 +369,18 @@ footer {
 /* PLAYER CARD */
 .player-card {
   background: rgba(255,255,255,0.05);
-  padding: 30px;
   border: 1px solid rgba(255,255,255,0.08);
+  padding: 30px;
   transition: transform 0.3s ease, background 0.3s ease;
 }
 
 .player-card:hover {
-  transform: translateY(-8px);
+  transform: translateY(-10px);
   background: rgba(255,255,255,0.08);
 }
 
 /* IMAGE PLACEHOLDER */
-.player-img {
+.player-image {
   width: 100%;
   height: 220px;
   background: rgba(0,0,0,0.6);
@@ -394,25 +394,10 @@ footer {
   margin-bottom: 6px;
 }
 
-.player-card span {
+.player-card p {
   font-size: 12px;
   opacity: 0.8;
   letter-spacing: 1px;
-}
-
-/* FOOTER */
-.site-footer {
-  text-align: center;
-  padding: 30px 0;
-  font-size: 12px;
-  opacity: 0.6;
-}
-body {
-  margin: 0;
-  padding-top: 70px; /* SAME height as nav */
-  background: #000;
-  color: #fff;
-  font-family: Arial, sans-serif;
 }
 
 /* MOBILE */
@@ -421,3 +406,4 @@ body {
     grid-template-columns: 1fr;
   }
 }
+
