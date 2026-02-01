@@ -328,3 +328,11 @@ footer {
   color: #ff2a2a;
   border-color: #ff2a2a;
 }
+.team-logo {
+  width: 220px;
+  max-width: 80%;
+  height: auto;
+  margin-bottom: 30px;
+  opacity: 0.95;
+}
+
