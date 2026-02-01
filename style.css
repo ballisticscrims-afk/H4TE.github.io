@@ -57,6 +57,10 @@ body {
 .nav-right {
   font-size: 14px;
 }
+.nav {
+  position: relative;
+  z-index: 1000;
+}
 
 /* =====================
    HERO BANNER
