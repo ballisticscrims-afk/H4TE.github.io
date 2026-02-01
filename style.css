@@ -406,4 +406,11 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+body {
+  margin: 0;
+  padding-top: 70px;
+  background: #000;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
 
