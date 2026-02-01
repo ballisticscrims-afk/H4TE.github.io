@@ -1,9 +1,8 @@
 H4TE.github.io/
-│
-├── index.html
-├── style.css
-├── logo.png
-└── background.jpg
+index.html
+style.css
+logo.png
+background.jpg
 
 
 
