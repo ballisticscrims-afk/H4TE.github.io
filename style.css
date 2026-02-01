@@ -200,4 +200,32 @@ footer {
   line-height: 1.7;
   opacity: 0.85;
 }
+/* =====================
+   ABOUT SECTION (BOXED)
+===================== */
+
+.about-section {
+  background: #0b0b0b;
+  padding: 120px 20px;
+}
+
+.about-box {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 60px 60px;
+  background: #151515;
+  border: 1px solid #1f1f1f;
+}
+
+.about-box h2 {
+  font-size: 34px;
+  letter-spacing: 3px;
+  margin-bottom: 25px;
+}
+
+.about-box p {
+  font-size: 18px;
+  line-height: 1.7;
+  opacity: 0.85;
+}
 
