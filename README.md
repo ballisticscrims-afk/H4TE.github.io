@@ -13,7 +13,7 @@ style.css
 
 <header>
   <img src="logo.png" class="logo" alt="Clan Logo">
-  <h1>Your Clan Name</h1>
+  <h1>H4TEEU</h1>
 </header>
 
 <section class="about">
