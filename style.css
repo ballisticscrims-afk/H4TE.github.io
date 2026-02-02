@@ -354,3 +354,22 @@ footer {
   border-radius: 10px;
   box-shadow: 0 10px 40px rgba(0,0,0,0.6);
 }
+.hero {
+  padding: 160px 80px;
+  background: rgba(0,0,0,0.6);
+}
+
+.hero-content {
+  max-width: 600px;
+}
+
+.hero-video-wrap {
+  margin-top: 32px;
+}
+
+.hero-video-wrap video {
+  width: 100%;
+  display: block;
+  border-radius: 10px;
+  box-shadow: 0 15px 50px rgba(0,0,0,0.7);
+}
