@@ -601,38 +601,56 @@ body {
     grid-template-columns: 1fr;
   }
 }
-/* =====================
-   HERO VIDEO SECTION
-===================== */
+/* === HERO VIDEO FIX (FORCED) === */
 
 .hero {
   position: relative;
   height: 100vh;
   width: 100%;
   overflow: hidden;
+  background: black; /* NO background image */
 }
 
-/* VIDEO BACKGROUND */
+/* VIDEO */
 .bg-video {
   position: absolute;
   inset: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  z-index: -2;
+  z-index: 0;
 }
 
+/* DARK OVERLAY */
 .overlay {
   position: absolute;
   inset: 0;
   background: rgba(0,0,0,0.65);
-  z-index: -1;
-}
-
-.hero-content {
-  position: relative;
   z-index: 1;
 }
+
+/* TEXT */
+.hero-content {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 56px;
+  letter-spacing: 4px;
+}
+
+.hero-content p {
+  margin-top: 12px;
+  opacity: 0.85;
+}
+
 
 
 
