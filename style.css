@@ -639,6 +639,7 @@ body {
 }
 
 /* INDIVIDUAL BACKGROUNDS */
+/* Backgrounds */
 .roster-box {
   background-image: url("roster-bg.jpg");
 }
@@ -647,8 +648,9 @@ body {
   background-image: url("media-bg.jpg");
 }
 
-.content-box {
-  background-image: url("content-bg.jpg");
+.shop-box {
+  background-image: url("shop-bg.jpg");
+}
 }
 /* GLOBAL PAGE FIX */
 .page-wrapper {
