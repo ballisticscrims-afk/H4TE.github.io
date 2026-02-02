@@ -74,18 +74,6 @@ body {
 
 
    /* SHOP PAGE */
-
-.shop-hero {
-  padding: 140px 60px 60px;
-  text-align: center;
-  background: #000;
-}
-
-.shop-hero h1 {
-  font-size: 48px;
-  letter-spacing: 3px;
-}
-
 .shop-hero p {
   color: #aaa;
   margin-top: 10px;
