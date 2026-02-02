@@ -600,45 +600,42 @@ body {
 }
 
 /* BASE BOX STYLE */
-.box {
-  position: relative;
+.feature-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  max-width: 1200px;
+  margin: 120px auto;
+  padding: 0 40px;
+}
+
+.feature-box {
   height: 260px;
+  background-size: cover;
+  background-position: center;
+  text-decoration: none;
+  color: white;
   display: flex;
   align-items: center;
   justify-content: center;
-  text-decoration: none;
+  font-size: 20px;
+  letter-spacing: 2px;
+  position: relative;
   overflow: hidden;
-  border-radius: 4px;
-  background-size: cover;
-  background-position: center;
-  transition: transform 0.3s ease;
 }
 
-.box::after {
+.feature-box::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0,0,0,0.65);
-  transition: background 0.3s ease;
+  background: rgba(0, 0, 0, 0.65);
 }
 
-.box span {
+.feature-box span {
   position: relative;
-  z-index: 2;
-  color: white;
-  font-size: 20px;
-  letter-spacing: 3px;
+  z-index: 1;
 }
 
-.box:hover {
-  transform: translateY(-6px);
-}
-
-.box:hover::after {
-  background: rgba(0,0,0,0.4);
-}
-
-/* INDIVIDUAL BACKGROUNDS */
 /* Backgrounds */
 .roster-box {
   background-image: url("roster-bg.jpg");
@@ -651,7 +648,7 @@ body {
 .shop-box {
   background-image: url("shop-bg.jpg");
 }
-}
+
 /* GLOBAL PAGE FIX */
 .page-wrapper {
   min-height: 100vh;
