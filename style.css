@@ -47,63 +47,80 @@ body {
 }
 
 /* HERO */
-/* HERO SECTION */
 .hero {
   position: relative;
-  height: 90vh;
-  width: 100%;
-  background: url("hero-bg.jpg") center center / cover no-repeat;
-  display: flex;
-  align-items: center;
+  height: 420px;
+  margin-top: 70px;
+  overflow: hidden;
 }
 
-/* DARK OVERLAY */
+.hero video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.65);
-  z-index: 1;
+  background: linear-gradient(to right, rgba(0,0,0,0.9), rgba(0,0,0,0.4));
+  pointer-events: none;
 }
 
-/* TEXT */
 .hero-content {
   position: relative;
   z-index: 2;
   padding-left: 80px;
-  max-width: 600px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .hero-content h1 {
-  color: white;
-  font-size: 56px;
-  font-weight: 800;
-  letter-spacing: 2px;
-  margin-bottom: 20px;
+  font-size: 44px;
+  letter-spacing: 3px;
 }
 
 .hero-content p {
-  color: #ccc;
-  font-size: 16px;
-  margin-bottom: 30px;
+  margin: 15px 0;
+  opacity: 0.8;
 }
 
-/* ENTER BUTTON */
-.enter-btn {
+.cta {
   display: inline-block;
   padding: 12px 30px;
-  border: 1px solid white;
+  border: 2px solid white;
   color: white;
   text-decoration: none;
-  font-weight: 600;
-  transition: all 0.3s ease;
 }
 
-.enter-btn:hover {
+.cta:hover {
   background: white;
   color: black;
 }
 
+/* BOXES */
+.boxes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  padding: 80px;
+}
 
+.box {
+  background: #151515;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: white;
+  letter-spacing: 2px;
+}
+
+.box:hover {
+  background: #1f1f1f;
+}
 
 /* PAGE HERO */
 .page {
@@ -361,72 +378,3 @@ footer {
   height: 80vh;
   overflow: hidden;
 }
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-body {
-  background: black;
-  color: white;
-}
-
-.hero {
-  position: relative;
-  height: 100vh;
-  width: 100%;
-  overflow: hidden;
-}
-
-/* Video behind everything */
-.bg-video {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  min-width: 100%;
-  min-height: 100%;
-  transform: translate(-50%, -50%);
-  object-fit: cover;
-  z-index: -2;
-}
-
-/* Dark overlay for readability */
-.overlay {
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.65);
-  z-index: -1;
-}
-
-/* Text content */
-.hero-content {
-  position: relative;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding-left: 80px;
-  max-width: 600px;
-}
-
-.hero-content h1 {
-  font-size: 64px;
-  letter-spacing: 2px;
-  line-height: 1.1;
-}
-
-.hero-content p {
-  margin-top: 20px;
-  font-size: 16px;
-  opacity: 0.85;
-}
-
-.enter {
-  margin-top: 30px;
-  color: #7a2cff;
-  text-decoration: none;
-  font-weight: bold;
-}
-
