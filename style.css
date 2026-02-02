@@ -324,10 +324,11 @@ footer {
 .player-image {
   width: 100%;
   height: 220px;
-  background-image: url("./images/team-placeholder.jpg");
+  background-image: url("team-placeholder.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  border-radius: 6px;
   margin-bottom: 15px;
 }
 
