@@ -742,11 +742,9 @@ body {
   background-image: url("shop-bg.jpg");
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
   position: relative;
 }
 
-/* Dark overlay so text is readable */
 .shop-box::before {
   content: "";
   position: absolute;
@@ -754,8 +752,8 @@ body {
   background: rgba(0, 0, 0, 0.55);
 }
 
-/* Text stays on top */
 .shop-box span {
   position: relative;
   z-index: 1;
 }
+
