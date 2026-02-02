@@ -275,19 +275,43 @@ body {
 /* =====================
    ABOUT
 ===================== */
+/* =====================
+   ABOUT SECTION
+===================== */
+
 .about-section {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  min-height: 80vh;
+  min-height: 85vh;
+  margin-top: 70px; /* navbar offset */
 }
 
+/* IMAGE SIDE */
 .about-image {
-  background: url("about-bg.jpg") center/cover no-repeat;
+  position: relative;
+  background-image: url("about-bg.jpg"); /* 👈 YOUR IMAGE */
+  background-size: cover;
+  background-position: center;
 }
 
+/* DARK OVERLAY FOR STYLE */
+.about-image-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    rgba(0,0,0,0.75),
+    rgba(0,0,0,0.25)
+  );
+}
+
+/* TEXT SIDE */
 .about-box {
-  background: rgba(15,15,15,0.95);
-  padding: 80px 60px;
+  background: rgba(15,15,15,0.96);
+  padding: 100px 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .about-box h2 {
@@ -297,7 +321,18 @@ body {
 }
 
 .about-box p {
+  color: #cfcfcf;
   line-height: 1.8;
+  font-size: 15px;
+  margin-bottom: 22px;
+}
+
+/* CTA LINE */
+.about-cta {
+  margin-top: 30px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  color: #ffffff;
   opacity: 0.9;
 }
 
