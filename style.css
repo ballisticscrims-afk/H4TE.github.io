@@ -215,3 +215,48 @@ footer {
   color: #00ffd5;
   letter-spacing: 1px;
 }
+/* PAGE HERO */
+.page-hero {
+  height: 260px;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page-hero h1 {
+  font-size: 42px;
+  letter-spacing: 3px;
+  color: white;
+}
+
+/* ROSTER GRID */
+.roster-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 30px;
+  padding: 80px;
+  background: #0b0b0b;
+}
+
+.player-card {
+  background: #151515;
+  padding: 25px;
+  text-align: center;
+  border: 1px solid #1f1f1f;
+}
+
+.player-image {
+  height: 220px;
+  background: #222;
+  margin-bottom: 20px;
+}
+
+.player-card h3 {
+  letter-spacing: 2px;
+}
+
+.player-card span {
+  color: #00ffd5;
+  font-size: 13px;
+}
