@@ -821,16 +821,17 @@ body {
 }
 
 /* IMAGE (NO IMG TAGS) */
+/* SHOP PRODUCT IMAGES */
 .product-image {
   width: 100%;
-  height: 320px;
+  height: 280px;
   background-size: cover;
   background-position: center;
-  margin-bottom: 20px;
   border-radius: 4px;
+  margin-bottom: 20px;
 }
 
-/* INDIVIDUAL PRODUCT IMAGES */
+/* MAKE SURE THESE FILENAMES MATCH YOUR REPO */
 .product-1 {
   background-image: url("product-1.jpg");
 }
@@ -842,6 +843,7 @@ body {
 .product-3 {
   background-image: url("product-3.jpg");
 }
+
 
 /* TEXT */
 .product-card h3 {
