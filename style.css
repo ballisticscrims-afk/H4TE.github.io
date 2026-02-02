@@ -250,3 +250,46 @@ footer {
   font-size: 14px;
   opacity: 0.7;
 }
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.player-card {
+  background: rgba(255,255,255,0.06);
+  padding: 25px;
+  text-align: center;
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.player-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(0,0,0,.6);
+}
+
+.player-image {
+  height: 220px;
+  background: #1a1a1a;
+  margin-bottom: 20px;
+}
+
+.player-card h3 {
+  letter-spacing: 2px;
+  margin-bottom: 6px;
+}
+
+.player-card p {
+  opacity: 0.7;
+  font-size: 14px;
+}
+
+.team-subtitle {
+  margin: 80px 0 30px;
+  text-align: center;
+  letter-spacing: 3px;
+  font-size: 22px;
+}
