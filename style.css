@@ -173,3 +173,45 @@ footer {
   background: #151515;
   border: 1px solid #1f1f1f;
 }
+/* =====================
+   TEAM / ROSTER GRID
+===================== */
+
+.roster-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 30px;
+  padding: 80px;
+  background: #0b0b0b;
+}
+
+/* PLAYER CARD */
+.player-card {
+  background: #151515;
+  padding: 25px;
+  text-align: center;
+  border: 1px solid #1f1f1f;
+  transition: transform 0.2s ease;
+}
+
+.player-card:hover {
+  transform: translateY(-6px);
+}
+
+.player-image {
+  height: 220px;
+  background: #222;
+  margin-bottom: 20px;
+}
+
+/* PLAYER TEXT */
+.player-card h3 {
+  letter-spacing: 2px;
+  margin-bottom: 6px;
+}
+
+.player-card span {
+  font-size: 13px;
+  color: #00ffd5;
+  letter-spacing: 1px;
+}
