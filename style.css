@@ -288,6 +288,18 @@ body {
   font-size: 40px;
   letter-spacing: 3px;
 }
+.roster-box {
+  background-image: url("roster-bg.jpg");
+}
+
+.media-box {
+  background-image: url("media-bg.jpg");
+}
+
+.shop-box {
+  background-image: url("shop-bg.jpg");
+}
+
 
 /* TEAM GRID */
 .grid {
