@@ -159,3 +159,61 @@ body {
 .p1 { background-image: url("assets/product-1.jpg"); }
 .p2 { background-image: url("assets/product-2.jpg"); }
 .p3 { background-image: url("assets/product-3.jpg"); }
+
+/* =====================
+   TEAM PAGE
+===================== */
+
+.team-page {
+  padding: 120px 80px;
+  text-align: center;
+}
+
+.team-title {
+  font-size: 48px;
+  letter-spacing: 4px;
+  margin-bottom: 60px;
+}
+
+/* GRID */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* PLAYER CARD */
+.player-card {
+  background: rgba(20,20,20,0.95);
+  padding: 20px;
+  border-radius: 6px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.player-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 50px rgba(0,0,0,0.7);
+}
+
+/* PLAYER IMAGE (BACKGROUND — NEVER BREAKS) */
+.player-image {
+  height: 240px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 4px;
+  margin-bottom: 18px;
+}
+
+/* TEXT */
+.player-card h3 {
+  letter-spacing: 2px;
+  margin-bottom: 6px;
+}
+
+.player-card p {
+  font-size: 14px;
+  opacity: 0.7;
+}
+
