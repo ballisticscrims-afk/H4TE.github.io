@@ -679,3 +679,55 @@ body {
 .content-box p {
   color: #aaa;
 }
+.page-wrapper {
+  background: #000;
+  color: #fff;
+}
+.page-hero {
+  padding: 120px 60px;
+  background: linear-gradient(
+    rgba(0,0,0,0.75),
+    rgba(0,0,0,0.75)
+  );
+}
+
+.page-hero h1 {
+  font-size: 48px;
+  letter-spacing: 4px;
+}
+
+.page-hero p {
+  margin-top: 10px;
+  color: #aaa;
+}
+.content-section {
+  padding: 80px 60px;
+}
+.content-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+.content-box {
+  background: #111;
+  padding: 30px;
+  text-align: center;
+  min-height: 260px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.content-box:hover {
+  transform: translateY(-6px);
+  background: #151515;
+}
+.content-box h3 {
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+}
+
+.content-box p {
+  color: #888;
+}
