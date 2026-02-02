@@ -590,64 +590,59 @@ body {
   text-decoration: none;
   font-weight: bold;
 }
-/* BOX SECTION */
+/* =====================
+   FEATURE BOXES (FIXED)
+===================== */
+
 .box-section {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
-  padding: 80px 80px 120px;
+  gap: 40px;
+  padding: 80px;
   background: black;
 }
 
-/* BASE BOX STYLE */
-.feature-section {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 40px;
-  max-width: 1200px;
-  margin: 120px auto;
-  padding: 0 40px;
-}
-
-.feature-box {
+.box {
+  position: relative;
   height: 260px;
-  background-size: cover;
-  background-position: center;
-  text-decoration: none;
-  color: white;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 20px;
-  letter-spacing: 2px;
-  position: relative;
+  text-decoration: none;
+  border-radius: 4px;
   overflow: hidden;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  transition: transform 0.3s ease;
 }
 
-.feature-box::before {
+.box::after {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.65);
+  background: rgba(0,0,0,0.65);
+  transition: background 0.3s ease;
 }
 
-.feature-box span {
+.box span {
   position: relative;
-  z-index: 1;
+  z-index: 2;
+  color: white;
+  font-size: 20px;
+  letter-spacing: 3px;
 }
 
-/* Backgrounds */
-.roster-box {
-  background-image: url("roster-bg.jpg");
+.box:hover {
+  transform: translateY(-6px);
 }
 
-.media-box {
-  background-image: url("media-bg.jpg");
+.box:hover::after {
+  background: rgba(0,0,0,0.4);
 }
 
-.shop-box {
-  background-image: url("shop-bg.jpg");
-}
 
 /* GLOBAL PAGE FIX */
 .page-wrapper {
