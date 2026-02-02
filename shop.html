@@ -1,98 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>H4TE SHOP</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+.shop-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  padding: 80px;
+}
 
-<header class="navbar">
-  <div class="nav-left">
-    <a href="index.html">
-      <img src="h4te-logo.png" alt="H4TE Logo">
-    </a>
-  </div>
+.product-card {
+  background: #111;
+  padding: 25px;
+  text-align: center;
+}
 
-<nav class="nav-center">
-  <a href="about.html">ABOUT</a>
-  <a href="team.html">TEAM</a>
-  <a href="media.html">MEDIA</a>
-  <a href="tournaments.html">TOURNAMENTS</a>
-  <a href="socials.html">SOCIALS</a>
-  <a href="shop.html">SHOP</a>
-</nav>
+.product-image {
+  height: 280px;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 20px;
+}
 
-
-  <div class="nav-right">USD $</div>
-</header>
-  </body>
-  <main class="page-wrapper">
-
-  <!-- SHOP HERO -->
-  <section class="shop-hero">
-    <h1>H4TE SHOP</h1>
-    <p>Official H4TE Gaming merchandise</p>
-  </section>
-
-  <!-- SHOP GRID -->
-
-<section class="shop-grid">
-
-  <!-- PRODUCT 1 -->
-  <div class="product-card">
-    <div class="product-image product-1"></div>
-    <h3>H4TE HOODIE</h3>
-    <p class="product-desc">Premium heavyweight hoodie.</p>
-    <p class="product-price">$59.99</p>
-    <button class="buy-btn">ADD TO CART</button>
-  </div>
-
-  <!-- PRODUCT 2 -->
-  <div class="product-card">
-    <div class="product-image product-2"></div>
-    <h3>H4TE T-SHIRT</h3>
-    <p class="product-desc">Soft cotton everyday tee.</p>
-    <p class="product-price">$29.99</p>
-    <button class="buy-btn">ADD TO CART</button>
-  </div>
-
-  <!-- PRODUCT 3 -->
-  <div class="product-card">
-    <div class="product-image product-3"></div>
-    <h3>H4TE LONG SLEEVE</h3>
-    <p class="product-desc">Athletic long sleeve top.</p>
-    <p class="product-price">$39.99</p>
-    <button class="buy-btn">ADD TO CART</button>
-  </div>
-
-  <!-- PRODUCT 4 -->
-  <div class="product-card">
-    <div class="product-image product-4"></div>
-    <h3>H4TE JERSEY</h3>
-    <p class="product-desc">Official team jersey.</p>
-    <p class="product-price">$69.99</p>
-    <button class="buy-btn">ADD TO CART</button>
-  </div>
-
-  <!-- PRODUCT 5 -->
-  <div class="product-card">
-    <div class="product-image product-5"></div>
-    <h3>H4TE CAP</h3>
-    <p class="product-desc">Adjustable snapback cap.</p>
-    <p class="product-price">$24.99</p>
-    <button class="buy-btn">ADD TO CART</button>
-  </div>
-
-  <!-- PRODUCT 6 -->
-  <div class="product-card">
-    <div class="product-image product-6"></div>
-    <h3>H4TE JOGGERS</h3>
-    <p class="product-desc">Comfort-fit jogger pants.</p>
-    <p class="product-price">$49.99</p>
-    <button class="buy-btn">ADD TO CART</button>
-  </div>
-
-</section>
-
-
+.p1 { background-image: url("assets/product-1.jpg"); }
+.p2 { background-image: url("assets/product-2.jpg"); }
+.p3 { background-image: url("assets/product-3.jpg"); }
