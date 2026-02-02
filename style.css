@@ -373,3 +373,56 @@ footer {
   border-radius: 10px;
   box-shadow: 0 15px 50px rgba(0,0,0,0.7);
 }
+.hero {
+  position: relative;
+  height: 80vh;
+  overflow: hidden;
+}
+
+/* VIDEO */
+.hero-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  z-index: 1;
+}
+
+/* DARK OVERLAY */
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  z-index: 2;
+}
+
+/* TEXT */
+.hero-content {
+  position: relative;
+  z-index: 3;
+  padding: 140px 80px;
+  max-width: 600px;
+  color: white;
+}
+
+.hero-content h1 {
+  font-size: 56px;
+  margin-bottom: 16px;
+}
+
+.hero-content p {
+  opacity: 0.85;
+  margin-bottom: 24px;
+}
+
+.enter-btn {
+  display: inline-block;
+  padding: 12px 28px;
+  border: 1px solid white;
+  color: white;
+  text-decoration: none;
+  letter-spacing: 2px;
+}
