@@ -531,3 +531,65 @@ body {
     grid-template-columns: 1fr;
   }
 }
+/* =====================
+   TOURNAMENTS PAGE
+===================== */
+
+.tournament-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 60px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.tournament-card {
+  background: rgba(20,20,20,0.95);
+  border: 1px solid #1f1f1f;
+  border-radius: 6px;
+  padding: 30px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tournament-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 50px rgba(0,0,0,0.7);
+}
+
+.tournament-card h3 {
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+}
+
+/* STATUS TAGS */
+.tournament-status {
+  font-size: 13px;
+  letter-spacing: 2px;
+  margin-bottom: 8px;
+}
+
+.tournament-status.upcoming {
+  color: #7a2cff;
+}
+
+.tournament-status.ongoing {
+  color: #00ff9c;
+}
+
+.tournament-status.finished {
+  color: #aaa;
+}
+
+.tournament-date {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .tournament-grid {
+    grid-template-columns: 1fr;
+  }
+}
