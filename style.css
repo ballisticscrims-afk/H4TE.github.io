@@ -878,3 +878,40 @@ body {
   background: #fff;
   color: #000;
 }
+.about-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 80vh;
+}
+
+.about-image {
+  background-image: url("about-bg.jpg"); /* 👈 ADD YOUR IMAGE HERE */
+  background-size: cover;
+  background-position: center;
+}
+
+.about-box {
+  background: rgba(15,15,15,0.95);
+  padding: 80px 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-box h2 {
+  font-size: 48px;
+  letter-spacing: 4px;
+  margin-bottom: 30px;
+}
+
+.about-box p {
+  line-height: 1.8;
+  opacity: 0.9;
+  margin-bottom: 22px;
+}
+
+.about-highlight {
+  margin-top: 30px;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
