@@ -129,7 +129,10 @@ body {
   text-decoration: none;
   display: inline-block;
 }
-
+.cta:hover {
+  background: #fff;
+  color: #000;
+}
 
 
 /* =====================
