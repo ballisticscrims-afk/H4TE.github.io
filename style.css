@@ -101,3 +101,38 @@ body {
   background: white;
   color: black;
 }
+.box-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  padding: 80px;
+}
+
+.box {
+  height: 260px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  position: relative;
+}
+
+.box::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+}
+
+.box span {
+  position: relative;
+  z-index: 1;
+  font-size: 20px;
+  letter-spacing: 3px;
+}
+
+.roster-box { background-image: url("assets/about-bg.jpg"); }
+.media-box { background-image: url("assets/product-2.jpg"); }
+.shop-box { background-image: url("assets/product-1.jpg"); }
